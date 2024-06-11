@@ -4,6 +4,9 @@
  */
 package proyectop1_diegocarias;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
  * @author djcar
@@ -14,7 +17,13 @@ public class ProyectoP1_DiegoCarias {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Juegos> j = new ArrayList();
+        ArrayList<Stocks> s = new ArrayList();
+        
+        String nombre = "Pablo";
+        //s.setNombreJuego();
+        System.out.println(s.toString());
     }
     
 }
