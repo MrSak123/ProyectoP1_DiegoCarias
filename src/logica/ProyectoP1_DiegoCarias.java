@@ -20,22 +20,15 @@ public class ProyectoP1_DiegoCarias {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);        
         ArrayList<Juegos> j = new ArrayList();
-        ArrayList<Stocks> s = new ArrayList();
         Usuarios u = new  Usuarios("", "", 0);
         Metodos m = new Metodos();
         
         Pantalla p = new Pantalla();
         p.setVisible(true);
         p.setLocationRelativeTo(null);
-        
-        u.setNombre("Juan");
-        u.setApellido("Pérez");
 
         int numeroCuenta = u.generarNumeroCuenta();
         u.setNumeroCuenta(numeroCuenta);
-
-        
-        System.out.println("El número de cuenta generado es: " + u.getNumeroCuenta());
     }
     
 }

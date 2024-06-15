@@ -8,7 +8,7 @@ package logica;
  *
  * @author djcar
  */
-class Juegos {
+public class Juegos {
     
     
     

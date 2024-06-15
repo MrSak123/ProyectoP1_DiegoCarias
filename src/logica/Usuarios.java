@@ -8,7 +8,7 @@ package logica;
  *
  * @author djcar
  */
-class Usuarios {
+public class Usuarios {
 
     private String nombre;
     private String apellido;
@@ -62,6 +62,7 @@ class Usuarios {
     public String toString() {
         return "Usuarios: " + "\n---------------\nNombre: " + nombre + "\nApellido: " + apellido + "\nNumeroCuenta: " + numeroCuenta +"\n---------------";
     }
+    
     
     
 }

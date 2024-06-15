@@ -8,6 +8,6 @@ package logica;
  *
  * @author djcar
  */
-class Metodos {
+public class Metodos {
     
 }
