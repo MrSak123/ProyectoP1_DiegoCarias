@@ -5,6 +5,7 @@
 package igu;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import logica.Juegos;
@@ -121,77 +122,131 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/igu/Imagen1.png"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
         jLabel2.setBackground(new java.awt.Color(0, 255, 153));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 255, 153));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Game Point");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 206, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 206, -1));
 
-        b1.setBackground(new java.awt.Color(153, 153, 153));
+        b1.setBackground(new java.awt.Color(128, 128, 128));
         b1.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
         b1.setText("Inicio");
+        b1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b1MouseExited(evt);
+            }
+        });
         b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b1ActionPerformed(evt);
             }
         });
-        jPanel2.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 150, 50));
+        jPanel2.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 150, 50));
 
-        b2.setBackground(new java.awt.Color(153, 153, 153));
+        b2.setBackground(new java.awt.Color(128, 128, 128));
         b2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
         b2.setText("Devolver");
+        b2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b2MouseExited(evt);
+            }
+        });
         b2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b2ActionPerformed(evt);
             }
         });
-        jPanel2.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 150, 50));
+        jPanel2.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 150, 50));
 
-        b3.setBackground(new java.awt.Color(153, 153, 153));
+        b3.setBackground(new java.awt.Color(128, 128, 128));
         b3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
         b3.setText("Prestar");
+        b3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b3MouseExited(evt);
+            }
+        });
         b3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b3ActionPerformed(evt);
             }
         });
-        jPanel2.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, 150, 50));
+        jPanel2.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 150, 50));
 
-        b4.setBackground(new java.awt.Color(153, 153, 153));
+        b4.setBackground(new java.awt.Color(128, 128, 128));
         b4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
         b4.setText("Usuarios");
+        b4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b4MouseExited(evt);
+            }
+        });
         b4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b4ActionPerformed(evt);
             }
         });
-        jPanel2.add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 430, 150, 50));
+        jPanel2.add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 150, 50));
 
-        b5.setBackground(new java.awt.Color(153, 153, 153));
+        b5.setBackground(new java.awt.Color(128, 128, 128));
         b5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
         b5.setText("Juegos");
+        b5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b5MouseExited(evt);
+            }
+        });
         b5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b5ActionPerformed(evt);
             }
         });
-        jPanel2.add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 500, 150, 50));
+        jPanel2.add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 150, 50));
 
-        b6.setBackground(new java.awt.Color(153, 153, 153));
+        b6.setBackground(new java.awt.Color(128, 128, 128));
         b6.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
         b6.setText("Cerrar Sesion");
+        b6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b6MouseExited(evt);
+            }
+        });
         b6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b6ActionPerformed(evt);
             }
         });
-        jPanel2.add(b6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 570, 150, 50));
+        jPanel2.add(b6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 570, 150, 50));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/igu/OIP.jpeg"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 650));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 650));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -215,12 +270,14 @@ public class Pantalla extends javax.swing.JFrame {
 
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null,"Juegos disponibles: \n"+m.mostrarJuegos());
+        JOptionPane.showMessageDialog(null,"Juegos: \n"+m.mostrarJuegos());
     }//GEN-LAST:event_b5ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
         // TODO add your handling code here:
-        
+       Usuario u = new Usuario();
+       u.setVisible(true);
+       u.setLocationRelativeTo(null);
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
@@ -235,8 +292,70 @@ public class Pantalla extends javax.swing.JFrame {
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         // TODO add your handling code here:
-       
+       Inicio inicio = new Inicio();
+       inicio.setVisible(true);
+       inicio.setLocationRelativeTo(null);
     }//GEN-LAST:event_b1ActionPerformed
+
+    private void b6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b6MouseEntered
+        // TODO add your handling code here:
+        b6.setBackground(Color.decode("#FF0000"));
+    }//GEN-LAST:event_b6MouseEntered
+
+    private void b6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b6MouseExited
+        // TODO add your handling code here:
+        b6.setBackground(Color.decode("#808080"));
+    }//GEN-LAST:event_b6MouseExited
+
+    private void b1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b1MouseEntered
+        // TODO add your handling code here:
+        b1.setBackground(Color.decode("#C0C0C0"));
+    }//GEN-LAST:event_b1MouseEntered
+
+    private void b1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b1MouseExited
+        // TODO add your handling code here:
+        b1.setBackground(Color.decode("#808080"));
+    }//GEN-LAST:event_b1MouseExited
+
+    private void b2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b2MouseExited
+        // TODO add your handling code here:
+        b2.setBackground(Color.decode("#808080"));
+    }//GEN-LAST:event_b2MouseExited
+
+    private void b2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b2MouseEntered
+        // TODO add your handling code here:
+        b2.setBackground(Color.decode("#C0C0C0"));
+    }//GEN-LAST:event_b2MouseEntered
+
+    private void b3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseEntered
+        // TODO add your handling code here:
+        b3.setBackground(Color.decode("#C0C0C0"));
+    }//GEN-LAST:event_b3MouseEntered
+
+    private void b3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseExited
+        // TODO add your handling code here:
+        b3.setBackground(Color.decode("#808080"));
+    }//GEN-LAST:event_b3MouseExited
+
+    private void b5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b5MouseEntered
+        // TODO add your handling code here:
+        b5.setBackground(Color.decode("#C0C0C0"));
+    }//GEN-LAST:event_b5MouseEntered
+
+    private void b5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b5MouseExited
+        // TODO add your handling code here:
+        b5.setBackground(Color.decode("#808080"));
+    }//GEN-LAST:event_b5MouseExited
+
+    private void b4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseEntered
+        // TODO add your handling code here:
+        b4.setBackground(Color.decode("#C0C0C0"));
+    }//GEN-LAST:event_b4MouseEntered
+
+    private void b4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseExited
+        // TODO add your handling code here:
+        b4.setBackground(Color.decode("#808080"));
+    }//GEN-LAST:event_b4MouseExited
 
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     

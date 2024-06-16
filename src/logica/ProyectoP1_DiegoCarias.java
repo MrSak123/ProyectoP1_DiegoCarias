@@ -6,6 +6,7 @@ package logica;
 
 import igu.Pantalla;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -17,15 +18,20 @@ public class ProyectoP1_DiegoCarias {
     public static ArrayList<Usuarios> u = new ArrayList();
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);        
-        ArrayList<Juegos> j = new ArrayList();
+ 
         Metodos m = new Metodos();
-        
+        Juegos j = new Juegos("",true);
         Pantalla p = new Pantalla();
         p.setVisible(true);
         p.setLocationRelativeTo(null);
         
+        
+        ArrayList<Juegos> juegos = j.llenar();
+         
+       
     }
-    
-    
-    
 }
+    
+    
+    
+

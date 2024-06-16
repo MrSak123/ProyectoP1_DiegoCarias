@@ -16,9 +16,9 @@ public class Metodos {
     //Metodo Para Mostrar Los juegos
     public String mostrarJuegos(){
         String matrizJuegos [][] = {
-            {"1. Call of Duty","2. BloodBorne","3. Demon Souls"},
-            {"4. Elden Ring","5. Dark Souls III","6. Rise of the Ronin"},
-            {"7. Fallout 4","8. Sekiro", "9. EA FC 24"}
+            {"1. The Legend of Zelda: Breath of the Wild","2. Super Mario Odyssey","3. Minecraft"},
+            {"4. Fortnite","5. Among Us","6. Call of Duty"},
+            {"7. Animal Crossing: New Horizons","8. Halo Infinite", "9. EA FC 24"}
         };
         String juegos = "";
         for (int i = 0; i < matrizJuegos.length; i++) {
@@ -33,9 +33,9 @@ public class Metodos {
     //Metodo Para devolver el juego deseado
     public String elegirJuego(int posicion){
         String juegos [][] = {
-            {"1. Call of Duty","2. BloodBorne","3. Demon Souls"},
-            {"4. Elden Ring","5. Dark Souls III","6. Rise of the Ronin"},
-            {"7. Fallout 4","8. Sekiro", "9. EA FC 24"}
+            {"1. The Legend of Zelda: Breath of the Wild","2. Super Mario Odyssey","3. Minecraft"},
+            {"4. Fortnite","5. Among Us","6. Call of Duty"},
+            {"7. Animal Crossing: New Horizons","8. Halo Infinite", "9. EA FC 24"}
         };
         String juego = "";
          switch (posicion) {
