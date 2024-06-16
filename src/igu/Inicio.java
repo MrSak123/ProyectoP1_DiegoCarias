@@ -4,16 +4,19 @@
  */
 package igu;
 
+import java.util.ArrayList;
+import logica.Juegos;
+
 /**
  *
  * @author djcar
  */
-public class Add extends javax.swing.JFrame {
+public class Inicio extends javax.swing.JFrame {
 
     /**
      * Creates new form CrearUsuario
      */
-    public Add() {
+    public Inicio() {
         initComponents();
     }
 
@@ -56,8 +59,7 @@ public class Add extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-   
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;

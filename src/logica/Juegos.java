@@ -4,14 +4,33 @@
  */
 package logica;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author djcar
  */
 public class Juegos {
-    
-    
-    
+    private String titulo;
 
-    // Recursive method to generate account number
+    public Juegos(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    @Override
+    public String toString() {
+        return "---------------\nJuegos:" + "\titulo: " + titulo +"\n---------------";
+    }
+    
+    
+    
+ 
 }

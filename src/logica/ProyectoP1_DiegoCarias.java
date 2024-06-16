@@ -14,21 +14,18 @@ import java.util.Scanner;
  */
 public class ProyectoP1_DiegoCarias {
 
-    /**
-     * @param args the command line arguments
-     */
+    public static ArrayList<Usuarios> u = new ArrayList();
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);        
         ArrayList<Juegos> j = new ArrayList();
-        Usuarios u = new  Usuarios("", "", 0);
         Metodos m = new Metodos();
         
         Pantalla p = new Pantalla();
         p.setVisible(true);
         p.setLocationRelativeTo(null);
-
-        int numeroCuenta = u.generarNumeroCuenta();
-        u.setNumeroCuenta(numeroCuenta);
+        
     }
+    
+    
     
 }
