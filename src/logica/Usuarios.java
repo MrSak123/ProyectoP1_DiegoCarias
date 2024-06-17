@@ -49,49 +49,35 @@ public class Usuarios {
     }
     
    
-    public static int generarNumeroCuenta() {
-        return generarNumeroCuentaRecursivo();
-    }
-
-    private static int generarNumeroCuentaRecursivo() {
-        
-        if(siguienteNumero > 9999){ 
-            siguienteNumero = 1000;
-        }
-        return siguienteNumero++;
-    }
+    
+    
     
     @Override
     public String toString() {
-        return "Usuarios: " + "\n---------------\nNombre: " + nombre + "\nApellido: " + apellido + "\nNumeroCuenta: " + numeroCuenta +"\n---------------";
+        return "\nUsuario: " + "\n---------------\nNombre: " + nombre + "\nApellido: " + apellido + "\nNumeroCuenta: " + numeroCuenta +"\n---------------";
     }
     public static ArrayList<Usuarios> u = new ArrayList();
     public static Metodos m = new Metodos();
     
-    /*public static ArrayList<Usuarios> llenarLista(ArrayList<Usuarios> lista, String nombre, String apellido, int numeroDeCuenta) {
-        int numero = m.generarNumeroCuenta();
-        lista.add(new Usuarios(nombre, apellido, numero));
-        return lista;
-    }*/
+   
     
-    public ArrayList llenar(){
-        int numero = m.generarNumeroCuenta();
-        ArrayList<Usuarios> u = new ArrayList<Usuarios>(Arrays.asList(
-            new Usuarios("Jose","Pineda", numero),
-            new Usuarios("Carlos","Escoto", numero),
-            new Usuarios("Juan","Bodoke", numero),
-            new Usuarios("Sadith","Ramos", numero),
-            new Usuarios("Luka","Cage", numero),
-            new Usuarios("Cassie","Pineda", numero),
-            new Usuarios("Ache","Harrison", numero),
-            new Usuarios("Sak","Shinichi", numero),
-            new Usuarios("Diego","Carias", numero),
-            new Usuarios("Josue","Borden", numero),
-            new Usuarios("David","Castro", numero)
-        ));
-        return u;
-    } 
-    
+    public ArrayList<Usuarios> llenar(){
+    ArrayList<Usuarios> u = new ArrayList<Usuarios>(Arrays.asList(
+        new Usuarios("Jose","Pineda", m.generarNumeroCuentaRecursivo(1000)),
+        new Usuarios("Carlos","Escoto", m.generarNumeroCuentaRecursivo(1001)),
+        new Usuarios("Juan","Bodoke", m.generarNumeroCuentaRecursivo(1002)),
+        new Usuarios("Sadith","Ramos", m.generarNumeroCuentaRecursivo(1003)),
+        new Usuarios("Luka","Cage", m.generarNumeroCuentaRecursivo(1004)),
+        new Usuarios("Cassie","Pineda", m.generarNumeroCuentaRecursivo(1005)),
+        new Usuarios("Ache","Harrison", m.generarNumeroCuentaRecursivo(1006)),
+        new Usuarios("Sak","Shinichi", m.generarNumeroCuentaRecursivo(1007)),
+        new Usuarios("Diego","Carias", m.generarNumeroCuentaRecursivo(1008)),
+        new Usuarios("Josue","Borden", m.generarNumeroCuentaRecursivo(1009)),
+        new Usuarios("David","Castro", m.generarNumeroCuentaRecursivo(1010))
+    ));
+    return u;
 }
-
+}
+    
+    
 

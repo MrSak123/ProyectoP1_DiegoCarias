@@ -181,11 +181,17 @@ public class Pantalla extends javax.swing.JFrame {
         b3.setText("Prestar");
         b3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         b3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b3MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 b3MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 b3MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                b3MousePressed(evt);
             }
         });
         b3.addActionListener(new java.awt.event.ActionListener() {
@@ -270,6 +276,7 @@ public class Pantalla extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 //--------------------------------------------------------------------------------Funciones-----------------------------------------------------------------------------------------------
     Metodos m = new Metodos();
+    int cont = 0;
     private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
@@ -289,13 +296,19 @@ public class Pantalla extends javax.swing.JFrame {
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         // TODO add your handling code here:
-        
+        JOptionPane.showInputDialog(null,"Digite un numero: \n"+m.mostrarJuegos());
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         // TODO add your handling code here:
-        int juegosPrestados = 0;
-       
+        
+        if(cont != 0){
+           JOptionPane.showMessageDialog(null,"Se Han Devuelto todos los juegos");
+           cont = 0;
+        }else{
+           JOptionPane.showMessageDialog(null,"Debe tener u  juego prestado");
+        }
+        
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
@@ -364,6 +377,16 @@ public class Pantalla extends javax.swing.JFrame {
         // TODO add your handling code here:
         b4.setBackground(Color.decode("#808080"));
     }//GEN-LAST:event_b4MouseExited
+
+    private void b3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseClicked
+        // TODO add your handling code here:
+        cont++;
+    }//GEN-LAST:event_b3MouseClicked
+
+    private void b3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MousePressed
+        // TODO add your handling code here:
+        cont++;
+    }//GEN-LAST:event_b3MousePressed
 
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     

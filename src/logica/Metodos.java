@@ -71,11 +71,22 @@ public class Metodos {
     }
     
     public static int siguienteNumero = 1000;
-    public static int generarNumeroCuenta() {
-        
-        if(siguienteNumero > 9999){ 
-            siguienteNumero = 1000;
-        }
-        return siguienteNumero++;
+
+public static int generarNumeroCuenta() {
+    return generarNumeroCuentaRecursivo(siguienteNumero);
+}
+
+public static int generarNumeroCuentaRecursivo(int numero) {
+    if (numero > 9999) {
+        return 1000;
+    } else {
+        siguienteNumero = numero;
+        return numero;
     }
 }
+
+public static int obtenerSiguienteNumeroCuenta() {
+    return generarNumeroCuentaRecursivo(siguienteNumero++);
+}
+}
+

@@ -15,10 +15,10 @@ import java.util.Scanner;
  */
 public class ProyectoP1_DiegoCarias {
 
-    public static ArrayList<Usuarios> u = new ArrayList();
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);        
- 
+        Usuarios u  = new Usuarios("","",0);
         Metodos m = new Metodos();
         Juegos j = new Juegos("",true);
         Pantalla p = new Pantalla();
@@ -27,9 +27,10 @@ public class ProyectoP1_DiegoCarias {
         
         
         ArrayList<Juegos> juegos = j.llenar();
+        ArrayList<Usuarios> usuarios = u.llenar();
         
         
-       
+        System.out.println(usuarios);
     }
 }
     
