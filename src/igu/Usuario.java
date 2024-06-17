@@ -34,7 +34,7 @@ public class Usuario extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         bAtras2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        listaUsuariatxtArea = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,9 +65,9 @@ public class Usuario extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        listaUsuariatxtArea.setColumns(20);
+        listaUsuariatxtArea.setRows(5);
+        jScrollPane1.setViewportView(listaUsuariatxtArea);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -142,6 +142,6 @@ public class Usuario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    public javax.swing.JTextArea listaUsuariatxtArea;
     // End of variables declaration//GEN-END:variables
 }
