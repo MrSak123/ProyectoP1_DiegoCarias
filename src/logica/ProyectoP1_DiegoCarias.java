@@ -27,7 +27,8 @@ public class ProyectoP1_DiegoCarias {
         
         
         ArrayList<Juegos> juegos = j.llenar();
-         
+        
+        
        
     }
 }

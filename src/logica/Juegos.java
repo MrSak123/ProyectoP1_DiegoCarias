@@ -36,7 +36,8 @@ public class Juegos {
         this.disponible = disponible;
     }
     public ArrayList llenar(){
-        ArrayList<Juegos> j = new ArrayList<Juegos>(Arrays.asList(new Juegos("The Legend of Zelda: Breath of the Wild", true),
+        ArrayList<Juegos> j = new ArrayList<Juegos>(Arrays.asList(
+            new Juegos("The Legend of Zelda: Breath of the Wild", true),
             new Juegos("Super Mario Odyssey", true),
             new Juegos("Minecraft", true),
             new Juegos("Fortnite", true),

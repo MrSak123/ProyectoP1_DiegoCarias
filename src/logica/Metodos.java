@@ -69,4 +69,13 @@ public class Metodos {
         }
          return juego;
     }
+    
+    public static int siguienteNumero = 1000;
+    public static int generarNumeroCuenta() {
+        
+        if(siguienteNumero > 9999){ 
+            siguienteNumero = 1000;
+        }
+        return siguienteNumero++;
+    }
 }

@@ -4,6 +4,9 @@
  */
 package logica;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  *
  * @author djcar
@@ -62,8 +65,32 @@ public class Usuarios {
     public String toString() {
         return "Usuarios: " + "\n---------------\nNombre: " + nombre + "\nApellido: " + apellido + "\nNumeroCuenta: " + numeroCuenta +"\n---------------";
     }
+    public static ArrayList<Usuarios> u = new ArrayList();
+    public static Metodos m = new Metodos();
     
+    /*public static ArrayList<Usuarios> llenarLista(ArrayList<Usuarios> lista, String nombre, String apellido, int numeroDeCuenta) {
+        int numero = m.generarNumeroCuenta();
+        lista.add(new Usuarios(nombre, apellido, numero));
+        return lista;
+    }*/
     
+    public ArrayList llenar(){
+        int numero = m.generarNumeroCuenta();
+        ArrayList<Usuarios> u = new ArrayList<Usuarios>(Arrays.asList(
+            new Usuarios("Jose","Pineda", numero),
+            new Usuarios("Carlos","Escoto", numero),
+            new Usuarios("Juan","Bodoke", numero),
+            new Usuarios("Sadith","Ramos", numero),
+            new Usuarios("Luka","Cage", numero),
+            new Usuarios("Cassie","Pineda", numero),
+            new Usuarios("Ache","Harrison", numero),
+            new Usuarios("Sak","Shinichi", numero),
+            new Usuarios("Diego","Carias", numero),
+            new Usuarios("Josue","Borden", numero),
+            new Usuarios("David","Castro", numero)
+        ));
+        return u;
+    } 
     
 }
 

@@ -144,7 +144,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void bSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSobreActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null,"Este es un codigo el cual conciste en interntar replicar\nuna tienda de alquiler de videojuegos");
+        JOptionPane.showMessageDialog(null,"Este es un codigo el cual conciste en interntar replicar\nuna tienda de alquiler de videojuegos,");
     }//GEN-LAST:event_bSobreActionPerformed
 
     private void bAtrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bAtrasMouseClicked
