@@ -10,6 +10,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -84,6 +85,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        descuento = new javax.swing.JButton();
         b1 = new javax.swing.JButton();
         b2 = new javax.swing.JButton();
         b3 = new javax.swing.JButton();
@@ -178,6 +180,14 @@ public class Pantalla extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Game Point");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 206, -1));
+
+        descuento.setText("Juego Random");
+        descuento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                descuentoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(descuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 630, 110, 20));
 
         b1.setBackground(new java.awt.Color(128, 128, 128));
         b1.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
@@ -528,6 +538,76 @@ public class Pantalla extends javax.swing.JFrame {
         setVisible(true);
     }//GEN-LAST:event_bAtras2ActionPerformed
 
+    private void descuentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_descuentoActionPerformed
+        // TODO add your handling code here:
+        Random random = new Random();
+        int numero = random.nextInt(0,1);
+        int contadorRnd = 0;
+        if(contadorRnd == 0){
+                if(numero == 1){
+                JOptionPane.showMessageDialog(null, "Usted Gano un Juego!!!!!");
+                int juego = random.nextInt(1,9);
+                if(juego == 1){
+                    contador++;
+                    if(contador > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 2){
+                    contador2++;
+                    if(contador2 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 3){
+                    contador3++;
+                    if(contador3 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 4){
+                    contador4++;
+                    if(contador4 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 5){
+                    contador5++;
+                    if(contador5 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 6){
+                    contador6++;
+                    if(contador6 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 7){
+                    contador7++;
+                    if(contador7 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 8){
+                    contador8++;
+                    if(contador8 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+                if(juego == 9){
+                    contador9++;
+                    if(contador9 > 1){
+                        JOptionPane.showMessageDialog(null, "Usted tuvo mala suerte este juego ya lo tiene");
+                    }
+                }
+            }
+            contadorRnd++;
+        }else{
+            JOptionPane.showMessageDialog(null, "Solo se puede una vez cada cierto tiempo. Vuelva Pronto");
+        }
+    }//GEN-LAST:event_descuentoActionPerformed
+
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     
@@ -542,6 +622,7 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JButton b5;
     private javax.swing.JButton b6;
     private javax.swing.JButton bAtras2;
+    private javax.swing.JButton descuento;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
