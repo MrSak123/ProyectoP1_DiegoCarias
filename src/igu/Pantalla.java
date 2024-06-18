@@ -19,6 +19,7 @@ import logica.Juegos;
 import logica.Metodos;
 import logica.Usuarios;
 
+
 /**
  *
  * @author djcar
@@ -73,10 +74,13 @@ public class Pantalla extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        usuarioFrame = new javax.swing.JFrame();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jFrame1 = new javax.swing.JFrame();
-        jFrame2 = new javax.swing.JFrame();
-        jFrame3 = new javax.swing.JFrame();
+        bAtras2 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtAreaUsuario = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -88,40 +92,77 @@ public class Pantalla extends javax.swing.JFrame {
         b6 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/igu/OIP.jpeg"))); // NOI18N
-        jLabel3.setText("jLabel3");
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
-        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
-        jFrame1.getContentPane().setLayout(jFrame1Layout);
-        jFrame1Layout.setHorizontalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/igu/OIP.jpeg"))); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Yu Gothic UI", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("Usuarios");
+
+        bAtras2.setBackground(new java.awt.Color(128, 128, 128));
+        bAtras2.setText("ATRAS");
+        bAtras2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bAtras2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bAtras2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bAtras2MouseExited(evt);
+            }
+        });
+        bAtras2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bAtras2ActionPerformed(evt);
+            }
+        });
+
+        txtAreaUsuario.setColumns(20);
+        txtAreaUsuario.setRows(5);
+        jScrollPane2.setViewportView(txtAreaUsuario);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(bAtras2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(142, 142, 142)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-        jFrame1Layout.setVerticalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(bAtras2)
+                .addGap(20, 20, 20))
         );
 
-        javax.swing.GroupLayout jFrame2Layout = new javax.swing.GroupLayout(jFrame2.getContentPane());
-        jFrame2.getContentPane().setLayout(jFrame2Layout);
-        jFrame2Layout.setHorizontalGroup(
-            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        javax.swing.GroupLayout usuarioFrameLayout = new javax.swing.GroupLayout(usuarioFrame.getContentPane());
+        usuarioFrame.getContentPane().setLayout(usuarioFrameLayout);
+        usuarioFrameLayout.setHorizontalGroup(
+            usuarioFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-        jFrame2Layout.setVerticalGroup(
-            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jFrame3Layout = new javax.swing.GroupLayout(jFrame3.getContentPane());
-        jFrame3.getContentPane().setLayout(jFrame3Layout);
-        jFrame3Layout.setHorizontalGroup(
-            jFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jFrame3Layout.setVerticalGroup(
-            jFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        usuarioFrameLayout.setVerticalGroup(
+            usuarioFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -288,15 +329,92 @@ public class Pantalla extends javax.swing.JFrame {
     }//GEN-LAST:event_b5ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
-        // TODO add your handling code here:
-       Usuario u = new Usuario();
-       u.setVisible(true);
-       u.setLocationRelativeTo(null);
+       
+       Usuarios u  = new Usuarios("","",0);
+       ArrayList<Usuarios> usuarios = u.llenar();
+       
+       usuarioFrame.pack();
+       usuarioFrame.setVisible(true);
+       usuarioFrame.setLocationRelativeTo(null);
+       setVisible(false);
+        
+       txtAreaUsuario.setEditable(false);
+       txtAreaUsuario.append(usuarios.toString());
+       
+       
+       
     }//GEN-LAST:event_b4ActionPerformed
-
+    public static int contador = 0, contador2  = 0, contador3 = 0, contador4 = 0, contador5 = 0, contador6 = 0, contador7 = 0, contador8 = 0, contador9 = 0;
+    
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null,"Digite un numero: \n"+m.mostrarJuegos());
+        Metodos m = new Metodos();
+        int posicion = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite un numero: \n"+m.mostrarJuegos()));
+        
+        //m.elegirJuego(posicion);
+        
+        
+        ArrayList<String> prestar = new ArrayList();
+        prestar.add(m.elegirJuego(posicion));
+        for (int i = 0; i < prestar.size(); i++) {
+            if(prestar.get(i).equalsIgnoreCase("1. The Legend of Zelda: Breath of the Wild")){
+                contador++;
+                if(contador > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            if(prestar.get(i).equals("2. Super Mario Odyssey")){
+                contador2++;
+                if(contador2 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            if(prestar.get(i).equals("3. Minecraft")){
+                contador3++;
+                if(contador3 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            if(prestar.get(i).equals("4. Fortnite")){
+                contador4++;
+                if(contador4 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+            }
+            }
+            if(prestar.get(i).equals("5. Among Us")){
+                contador5++;
+                if(contador5 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            if(prestar.get(i).equals("6. Call of Duty")){
+                contador6++;
+                if(contador6 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            if(prestar.get(i).equals("7. Animal Crossing: New Horizons")){
+                contador7++;
+                if(contador7 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            if(prestar.get(i).equals("8. Halo Infinite")){
+                contador8++;
+                if(contador8 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            if(prestar.get(i).equals("8. Halo Infinite")){
+                contador9++;
+                if(contador9 > 1){
+                JOptionPane.showMessageDialog(null,"Ese Juego ya esta Prestado");
+                }
+            }
+            
+        }
+        
+        
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
@@ -305,8 +423,9 @@ public class Pantalla extends javax.swing.JFrame {
         if(cont != 0){
            JOptionPane.showMessageDialog(null,"Se Han Devuelto todos los juegos");
            cont = 0;
+           contador = 0; contador2  = 0; contador3 = 0; contador4 = 0; contador5 = 0; contador6 = 0; contador7 = 0; contador8 = 0; contador9 = 0;
         }else{
-           JOptionPane.showMessageDialog(null,"Debe tener u  juego prestado");
+           JOptionPane.showMessageDialog(null,"Debe tener un juego prestado");
         }
         
     }//GEN-LAST:event_b2ActionPerformed
@@ -388,6 +507,27 @@ public class Pantalla extends javax.swing.JFrame {
         cont++;
     }//GEN-LAST:event_b3MousePressed
 
+    private void bAtras2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bAtras2MouseClicked
+        // TODO add your handling code here:
+        bAtras2.setBackground(Color.decode("#FF0000"));
+    }//GEN-LAST:event_bAtras2MouseClicked
+
+    private void bAtras2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bAtras2MouseEntered
+        // TODO add your handling code here:
+        bAtras2.setBackground(Color.decode("#8B0000"));
+    }//GEN-LAST:event_bAtras2MouseEntered
+
+    private void bAtras2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bAtras2MouseExited
+        // TODO add your handling code here:
+        bAtras2.setBackground(Color.decode("#808080"));
+    }//GEN-LAST:event_bAtras2MouseExited
+
+    private void bAtras2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAtras2ActionPerformed
+        // TODO add your handling code here:
+        usuarioFrame.setVisible(false);
+        setVisible(true);
+    }//GEN-LAST:event_bAtras2ActionPerformed
+
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     
@@ -401,13 +541,16 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JButton b4;
     private javax.swing.JButton b5;
     private javax.swing.JButton b6;
-    private javax.swing.JFrame jFrame1;
-    private javax.swing.JFrame jFrame2;
-    private javax.swing.JFrame jFrame3;
+    private javax.swing.JButton bAtras2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea txtAreaUsuario;
+    private javax.swing.JFrame usuarioFrame;
     // End of variables declaration//GEN-END:variables
 }

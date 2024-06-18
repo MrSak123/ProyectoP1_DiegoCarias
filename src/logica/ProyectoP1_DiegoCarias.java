@@ -5,6 +5,7 @@
 package logica;
 
 import igu.Pantalla;
+import static igu.Pantalla.contador;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -26,11 +27,9 @@ public class ProyectoP1_DiegoCarias {
         p.setLocationRelativeTo(null);
         
         
-        ArrayList<Juegos> juegos = j.llenar();
-        ArrayList<Usuarios> usuarios = u.llenar();
         
-        
-        System.out.println(usuarios);
+       
+       
     }
 }
     

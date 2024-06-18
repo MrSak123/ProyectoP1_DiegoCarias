@@ -35,7 +35,7 @@ public class Metodos {
         String juegos [][] = {
             {"1. The Legend of Zelda: Breath of the Wild","2. Super Mario Odyssey","3. Minecraft"},
             {"4. Fortnite","5. Among Us","6. Call of Duty"},
-            {"7. Animal Crossing: New Horizons","8. Halo Infinite", "9. EA FC 24"}
+            {"7. Animal Crossing: New Horizons","8. Halo Infinite", "8. Halo Infinite"}
         };
         String juego = "";
          switch (posicion) {
